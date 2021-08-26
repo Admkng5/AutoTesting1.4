@@ -20,7 +20,7 @@ public class Tests extends BaseTest {
         selenideYandexMarket.openElectronicSection();
         selenideYandexMarket.openSmartphonesSection();
         selenideYandexMarket.changeRegion("Москва");
-        selenideYandexMarket.selectSmartphoneBrand("Nokia");
+        selenideYandexMarket.selectSmartphoneBrand("iPhone");
         selenideYandexMarket.show12Items();
         while(selenideYandexMarket.isOneMorePage()); {
             Assertions.assertEquals(true, selenideYandexMarket.checkContainsBrand("iPhone"));
